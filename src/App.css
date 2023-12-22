@@ -182,11 +182,18 @@
 }
 
 /* tabsection */
-.nav-tabs .nav-item.show .nav-link,
+/* .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: var(--color-red) !important;
   border-bottom: 3px solid var(--color-red) !important;
   border-color: none !important;
+  border-bottom: 3px solid var(--color-red) !important;
+} */
+.nav-tabs .nav-link.active {
+  color: var(--color-red) !important;
+  background-color: transparent !important;
+  border-color: var(--color-red) !important;
+  border-bottom: 3px solid var(--color-red) !important;
 }
 
 .nav-tabs .nav-link {
