@@ -22,11 +22,11 @@ const Navsec = () => {
       <Container className='py-3'>
         <div className='d-flex align-items-center justify-content-between'>
           <img src={logo} alt="logo" className='d-none d-lg-block cursor-pointer' />
-          <img src={navimg} alt="navimg" className='d-none d-lg-block cursor-pointer' />
+          <img src={navimg} alt="navimg" className='w-img' />
         </div>
       </Container>
       <div className='shadow1'>
-        <Container className='py-md-3 py-3'>
+        <Container className=' py-lg-3 py-2'>
           <div className='d-flex align-items-center justify-content-between'>
             <img src={logo} alt="logo" className='d-block d-lg-none cursor-pointer' />
             <label className='menu' onClick={nav}>

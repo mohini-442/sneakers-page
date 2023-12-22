@@ -128,7 +128,7 @@ const Section1 = () => {
                         </div>
                         <div class="line my-4"></div>
                         <div class="d-flex gap-4">
-                            <a href="" className=' pe-3'>
+                            <a href="#" className='pe-3'>
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g opacity="0.4">
@@ -138,7 +138,7 @@ const Section1 = () => {
                                     </g>
                                 </svg>
                             </a>
-                            <a href="https://www.facebook.com/login/" target="_blank">
+                            <a href="https://www.facebook.com/login/" target="_blank" className='icon'>
                                 <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_776_648)">
@@ -157,7 +157,7 @@ const Section1 = () => {
                                     </defs>
                                 </svg>
                             </a>
-                            <a href="https://twitter.com/i/flow/login" target="_blank">
+                            <a href="https://twitter.com/i/flow/login" target="_blank" className='icon'>
                                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_776_651)">
@@ -173,7 +173,7 @@ const Section1 = () => {
                                     </defs>
                                 </svg>
                             </a>
-                            <a href="https://in.pinterest.com/" target="_blank" >
+                            <a href="https://in.pinterest.com/" target="_blank" className='icon'>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_776_653)">
@@ -189,7 +189,7 @@ const Section1 = () => {
                                     </defs>
                                 </svg>
                             </a>
-                            <a href="https://www.google.com/" target="_blank">
+                            <a href="https://www.google.com/" target="_blank" className='icon'>
                                 <svg width="30" height="29" viewBox="0 0 30 29" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
