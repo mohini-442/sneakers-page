@@ -396,9 +396,12 @@
   width: 100%;
 }
 
+.icon {
+  transition: all .3s linear;
+}
+
 .icon:hover {
   transform: translateY(-12%);
-  transition: all .3s linear;
 }
 
 /* button */

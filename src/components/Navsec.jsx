@@ -5,7 +5,6 @@ import logo from '../assets/images/logo.png'
 import navimg from '../assets/images/navimg.png'
 import Nav from 'react-bootstrap/Nav';
 
-
 const Navsec = () => {
   const [data, setData] = useState(false)
   function nav() {
@@ -66,7 +65,6 @@ const Navsec = () => {
         </Container>
       </div>
     </nav>
-
   )
 }
 
