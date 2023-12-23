@@ -17,7 +17,7 @@ const Navsec = () => {
     }
   }
   return (
-    <nav className='nav-shadow'>
+    <nav className='nav-shadow z-1 position-relative'>
       <Container className='py-3'>
         <div className='d-flex align-items-center justify-content-between'>
           <img src={logo} alt="logo" className='d-none d-lg-block cursor-pointer' />
@@ -27,7 +27,7 @@ const Navsec = () => {
       <div className='shadow1'>
         <Container className=' py-lg-3 py-2'>
           <div className='d-flex align-items-center justify-content-between'>
-            <img src={logo} alt="logo" className='d-block d-lg-none cursor-pointer' />
+            <img src={logo} alt="logo" className='d-block d-lg-none cursor-pointer img-h' />
             <label className='menu' onClick={nav}>
               <span></span>
               <span></span>

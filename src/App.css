@@ -39,7 +39,7 @@
   --dark-black: #0D0D0D;
   --browm: #171717;
   --orange: #D36B31;
-  --white-grey:#DEE2E6;
+  --white-grey: #DEE2E6;
 }
 
 /* color */
@@ -149,6 +149,10 @@
   box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.10);
 }
 
+.nav-links {
+  transition: all 200ms linear;
+}
+
 .nav-links:hover {
   -webkit-text-stroke: 0.7px var(--color-black);
 }
@@ -162,8 +166,8 @@
 }
 
 .menu>span {
-  height: 5px;
-  width: 30px;
+  height: 3px;
+  width: 24px;
   border-radius: 10px;
   background: var(--color-black);
   margin-top: 5px;
@@ -182,13 +186,7 @@
 }
 
 /* tabsection */
-/* .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
-  color: var(--color-red) !important;
-  border-bottom: 3px solid var(--color-red) !important;
-  border-color: none !important;
-  border-bottom: 3px solid var(--color-red) !important;
-} */
+
 .nav-tabs .nav-link.active {
   color: var(--color-red) !important;
   background-color: transparent !important;
@@ -225,7 +223,6 @@
   box-shadow: 23px 44px 47px 0px rgba(0, 0, 0, 0.20);
   border: none !important;
   transition: all 200ms linear;
-  cursor: pointer;
   margin-left: auto;
   margin-right: auto;
 }
@@ -243,6 +240,7 @@
   border: 0.311px solid var(--color-white);
   background: var(--color-green);
   padding: 3px 10px;
+  transition: all 200ms linear;
 }
 
 .greenbtn:hover {
@@ -257,6 +255,7 @@
   border-radius: 40px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   background: var(--color-white);
+  transition: all 200ms linear;
 }
 
 .sizebtn:hover {
@@ -331,6 +330,7 @@
   background: rgba(196, 196, 196, 0.00);
   padding: 3px;
   cursor: pointer;
+  transition: all 200ms linear;
 }
 
 .color-border:hover {
@@ -436,6 +436,7 @@
   justify-content: center;
   align-items: center;
   padding: 24px 17px;
+  transition: all 200ms linear;
 }
 
 .nextbtn:hover {
@@ -466,7 +467,6 @@
   background: var(--color-white);
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
 }
 
 .card2:hover {
@@ -516,6 +516,10 @@
     transition: .7s;
   }
 
+  .img-h {
+    height: 49px;
+  }
+
   .menu>span {
     display: flex !important;
   }
@@ -532,7 +536,7 @@
   }
 
   .nav-link {
-    font-size: var(--fs-s) !important;
+    font-size: var(--fs-xs) !important;
   }
 
   .cart-btn {
@@ -606,6 +610,6 @@
 
 @media (min-width:1200px) {
   .tab-gap {
-    gap: 56px;
+    gap: 76px;
   }
 }

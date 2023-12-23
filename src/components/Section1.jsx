@@ -8,29 +8,37 @@ import shoeimg4 from '../assets/images/shoeimg4.png'
 import shoeimg5 from '../assets/images/shoeimg5.png'
 
 const Section1 = () => {
-    const [count, setcount] = useState(0);
+    let [count, setCount] = useState(1);
+
+    function incrementCount() {
+        setCount(prevCount => (prevCount < 10 ? prevCount + 1 : prevCount));
+    }
+    function decrementCount() {
+
+        setCount(prevCount => (prevCount > 1 ? prevCount - 1 : 1));
+    }
     return (
         <div>
             <Container className='pt-md-5'>
-                <Row className='py-5'>
+                <Row className='py-sm-5 pt-3'>
                     <Col xl={6}>
                         <img src={shoeimg1} alt="shoes" className='w-100' />
-                        <Row className='pt-4'>
-                            <Col lg={3} md={4} className='col-6'>
+                        <Row className='pt-sm-4'>
+                            <Col className='col-3'>
                                 <img src={shoeimg2} alt="shoes1" className='pt-3 w-100' />
                             </Col>
-                            <Col lg={3} md={4} className='col-6'>
+                            <Col className='col-3'>
                                 <img src={shoeimg3} alt="shoes2" className='pt-3 w-100' />
                             </Col>
-                            <Col lg={3} md={4} className='col-6'>
+                            <Col className='col-3'>
                                 <img src={shoeimg4} alt="shoes3" className='pt-3 w-100' />
                             </Col>
-                            <Col lg={3} md={4} className='col-6'>
+                            <Col className='col-3'>
                                 <img src={shoeimg5} alt="shoes4" className='pt-3 w-100' />
                             </Col>
                         </Row>
                     </Col>
-                    <Col xl={6} className='pt-5 mt-4 mt-xl-0 ps-xl-5'>
+                    <Col xl={6} className=' mt-4 mt-xl-0 ps-xl-5'>
                         <h2 className='color-black ff-poppins fw-semibold fs-2xl'>PREMIUM MENS SPORTS LATHER KEDS</h2>
                         <div className='d-flex align-items-center pt-2'>
                             <svg width="103" height="18" viewBox="0 0 103 18" fill="none"
@@ -65,10 +73,10 @@ const Section1 = () => {
                             <p className='color-black ff-poppins lh-125 fw-medium fs-md mb-0'>Qty:</p>
                             <div className='border w-108 d-flex align-items-center justify-content-center gap-3'>
                                 <button className='color-grey ff-josefin fs-md lh-125 fw-normal border-none bg-transparent'
-                                    onClick={() => setcount(count - 1)}>-</button>
+                                    onClick={decrementCount}>-</button>
                                 <p class="fs-md ff-josefin color-grey fw-normal lh-125 mb-0" id="counting">{count}</p>
                                 <button class="color-grey ff-josefin fs-md lh-125 fw-normal border-none bg-transparent"
-                                    onClick={() => setcount(count + 1)}>+</button>
+                                    onClick={incrementCount}>+</button>
                             </div>
                             <a href="#" class="text-white green-btn ff-poppins lh-125 fw-medium fs-md">Add to Cart</a>
                         </div>
